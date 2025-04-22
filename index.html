@@ -1,36 +1,153 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <title></title>
-    <link rel="stylesheet" href="style.css">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Сив правоаголник</title>
-  </head>
-  <body>
-    <div class="rectangle"></div>
-    <header>  
-          <img class='logo'
-              src="src/logo.jpg"
-              alt='A picture should be here'>
-          <div class='menu'>
-              <a class='menu-elements' href=''>HOME</a>
-              <a class='menu-elements' href=''>ABOUT</a>
-              <a class='menu-elements' href=''>CONTACT US</a>
-          <img class='krevet'
-              src="src/krevet.png">
-          <img class='meni'
-              src="src/meni.png">
-          <img class='mix'
-              src="src/mix.jpg">
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MM Apartments | MM Апартмани</title>
+  <link rel="stylesheet" href="style.css">
+  <script defer src="script.js"></script>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;500;700&display=swap" rel="stylesheet">
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <img src="src/logo.jpg" alt="MM Apartments Logo">
+    <nav>
+      <a href="#home">Home / Почетна</a>
+      <a href="#about">About / За нас</a>
+      <a href="#apartments">Apartments / Апартмани</a>
+      <a href="#features">Why Us / Зошто ние</a>
+      <a href="#booking">Booking / Резервации</a>
+      <a href="#location">Location / Локација</a>
+      <a href="#contact">Contact / Контакт</a>
+    </nav>
+  </header>
 
 
+  <section class="hero" id="home">
+    <video class="hero-video" autoplay muted loop playsinline>
+      <source src="videos/hero.mp4" type="video/mp4">
+      <!-- Fallback image -->
+      <img src="images/hero-bg.jpg" alt="Hero Background">
+    </video>
+    <div class="hero-text">
+      <h1>Welcome to MM Apartments</h1>
+      <h1>Добредојдовте во MM Апартмани</h1>
+      <p>Your perfect vacation awaits / Ве очекува совршен одмор</p>
+    </div>
+  </section>
+  
+
+  <!-- Weather -->
+  <section id="weather" class="section weather-section">
+    <h2>Current Weather / Тековно време</h2>
+    <p>Temperature: 25°C / Температура: 25°C</p>
+    <p>Humidity: 60% / Влажност: 60%</p>
+    <p>Condition: Sunny / Услови: Сончево</p>
+  </section>
+
+  <!-- About -->
+  <section class="section" id="about">
+    <h2>About Nea Kallikratia / За Неа Каликратија</h2>
+    <p>Nea Kallikratia is a charming seaside town in Halkidiki, Greece, 30 km south of Thessaloniki.</p>
+    <p>Неа Каликратија е прекрасно крајбрежно место во Халкидики, Грција, 30 км јужно од Солун.</p>
+    <p>Population: 6,000+ / Население: над 6.000 жители</p>
+    <p>Average August High: 29°C; January Low: 12°C / Август: 29°C; Јануари: 12°C</p>
+  </section>
+
+  <!-- Apartments -->
+  <section class="section" id="apartments">
+    <h2>Our Apartments / Нашите Апартмани</h2>
+    <div class="apartments">
+      <div class="apartment">
+        <div class="apartment-slider">
+          <img src="src/logo.jpg" alt="Apartment 1">
+          <img src="src/logo.jpg" alt="Apartment 1">
+        </div>
+        <div class="info">
+          <h3>Apartment 1 / Апартман 1</h3>
+          <p>Cozy sea-view unit with modern amenities.</p>
+          <p>Удобен апартман со поглед кон морето и модерни погодности.</p>
+          <a href="#booking">Book Now / Резервирај</a>
+        </div>
       </div>
-    </header>
-    
-    
-    
-    
-    
-  </body>  
+      <div class="apartment">
+        <div class="apartment-slider">
+          <img src="src/logo.jpg" alt="Apartment 2">
+          <img src="src/logo.jpg" alt="Apartment 2">
+        </div>
+        <div class="info">
+          <h3>Apartment 2 / Апартман 2</h3>
+          <p>Spacious center-city unit with private balcony.</p>
+          <p>Просторен апартман во центар со приватен балкон.</p>
+          <a href="#booking">Book Now / Резервирај</a>
+        </div>
+      </div>
+    </div>
+  </section>
 
+  <!-- Features -->
+  <section class="section" id="features">
+    <h2>Why Choose Us? / Зошто ние?</h2>
+    <div class="features">
+      <div class="feature">
+        <i class="fas fa-sun"></i>
+        <h3>Sunny Destination / Сончева дестинација</h3>
+        <p>Enjoy sunshine almost year-round.</p>
+        <p>Уживајте во сонце речиси цела година.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-swimmer"></i>
+        <h3>Blue Flag Beaches / Blue Flag плажи</h3>
+        <p>Relax on award-winning beaches minutes away.</p>
+        <p>Релаксирајте на наградувани плажи на неколку минути.</p>
+      </div>
+      <div class="feature">
+        <i class="fas fa-landmark"></i>
+        <h3>Nearby Attractions / Блиски атракции</h3>
+        <p>Historic Port, Central Square, Ancient Olynthos.</p>
+        <p>Историско пристаниште, Централен плоштад, Олинтос.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- Booking -->
+  <section class="section" id="booking">
+    <h2>Booking / Резервации</h2>
+    <form id="booking-form" class="form" action="https://formsubmit.co/mmapartments5@gmail.com" method="POST">
+      <input type="text" name="name" placeholder="Your Name / Вашето име" required>
+      <input type="email" name="email" placeholder="Your Email / Вашиот е-пошта" required>
+      <input type="date" name="date" required>
+      <textarea name="message" rows="4" placeholder="Message / Порака"></textarea>
+      <input type="hidden" name="_subject" value="New booking request from MM Apartments">
+      <button type="submit">Submit / Прати</button>
+    </form>
+    <p id="form-status" class="form-status"></p>
+  </section>
+
+  <!-- Location -->
+  <section class="section" id="location">
+    <h2>Location / Локација</h2>
+    <p>Nea Kallikratia, Halkidiki, Greece / Неа Каликратија, Халкидики, Грција</p>
+    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3000.365261927216!2d23.006568315269296!3d40.098129879214735!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14aafff301097ff%3A0x3c31511c84f58080!2sNea%20Kallikratia!5e0!3m2!1sen!2sgr!4v1610000000000" width="100%" height="300" style="border:0;border-radius:12px;" allowfullscreen loading="lazy"></iframe>
+  </section>
+
+  <!-- Contact -->
+  <section class="section" id="contact">
+    <h2>Contact / Контакт</h2>
+    <p><i class="fas fa-phone"></i> +389 70 000 000</p>
+    <p><i class="fas fa-envelope"></i> mmapartments5@gmail.com</p>
+    <p><i class="fas fa-map-marker-alt"></i> MM Apartments, Nea Kallikratia</p>
+    <div class="socials">
+      <a href="https://www.facebook.com/profile.php?id=61559930049878" target="_blank"><i class="fab fa-facebook"></i></a>
+      <a href="https://www.instagram.com/mmapartments4/" target="_blank"><i class="fab fa-instagram"></i></a>
+    </div>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    &copy; 2025 MM Apartments. All rights reserved.
+  </footer>
+</body>
 </html>
