@@ -1,16 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-07JKGX343V"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-07JKGX343V');
-</script>
-</script>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>MM Apartments | MM Апартмани</title>
@@ -67,35 +57,30 @@
   </section>
 
   <!-- Apartments -->
-  <section class="section" id="apartments">
-    <h2>Our Apartments / Нашите Апартмани</h2>
-    <div class="apartments">
-      <div class="apartment">
-        <div class="apartment-slider">
-          <img src="src/logo.jpg" alt="Apartment 1">
-          <img src="src/logo.jpg" alt="Apartment 1">
-        </div>
-        <div class="info">
-          <h3>Apartment 1 / Апартман 1</h3>
-          <p>Cozy sea-view unit with modern amenities.</p>
-          <p>Удобен апартман со поглед кон морето и модерни погодности.</p>
-          <a href="#booking">Book Now / Резервирај</a>
-        </div>
-      </div>
-      <div class="apartment">
-        <div class="apartment-slider">
-          <img src="src/logo.jpg" alt="Apartment 2">
-          <img src="src/logo.jpg" alt="Apartment 2">
-        </div>
-        <div class="info">
-          <h3>Apartment 2 / Апартман 2</h3>
-          <p>Spacious center-city unit with private balcony.</p>
-          <p>Просторен апартман во центар со приватен балкон.</p>
-          <a href="#booking">Book Now / Резервирај</a>
-        </div>
+<!-- Apartments with links -->
+<section class="section" id="apartments">
+  <h2>Our Apartments / Нашите Апартмани</h2>
+  <div class="apartments">
+    <div class="apartment">
+      <img src="src/logo.jpg" alt="Apartment 1">
+      <div class="info">
+        <h3>Apartment 1 / Апартман 1</h3>
+        <p>Cozy sea-view unit with modern amenities.</p>
+        <a href="apartment1.html" class="button">View Apartment / Погледни Апартман</a>
       </div>
     </div>
-  </section>
+    <div class="apartment">
+      <img src="src/logo.jpg" alt="Apartment 2">
+      <div class="info">
+        <h3>Apartment 2 / Апартман 2</h3>
+        <p>Spacious center-city unit with private balcony.</p>
+        <a href="apartment2.html" class="button">View Apartment / Погледни Апартман</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+
 
   <!-- Features -->
   <section class="section" id="features">
@@ -146,8 +131,8 @@
   <!-- Contact -->
   <section class="section" id="contact">
     <h2>Contact / Контакт</h2>
-    <p><i class="fas fa-phone"></i> +389 71 356 339</p>
-    <p><i class="fas fa-envelope"></i> mmapartments5@gmail.com</p>
+    <p><i class="fas fa-phone"></i> +389 70 000 000</p>
+    <p><i class="fas fa-envelope"></i> <a href="/cdn-cgi/l/email-protection" class="__cf_email__" data-cfemail="b3deded2c3d2c1c7ded6ddc7c086f3d4ded2dadf9dd0dcde">[email&#160;protected]</a></p>
     <p><i class="fas fa-map-marker-alt"></i> MM Apartments, Nea Kallikratia</p>
     <div class="socials">
       <a href="https://www.facebook.com/profile.php?id=61559930049878" target="_blank"><i class="fab fa-facebook"></i></a>
@@ -159,5 +144,11 @@
   <footer>
     &copy; 2025 MM Apartments. All rights reserved.
   </footer>
-</body>
+<script data-cfasync="false" src="/cdn-cgi/scripts/5c5dd728/cloudflare-static/email-decode.min.js"></script><script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'934ea6a28f2a27b8',t:'MTc0NTQyNDgzNS4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+<a href="apartment1.html" class="open-apartment">Apartment 1 / Апартман 1</a>
+<a href="apartment2.html" class="open-apartment">Apartment 2 / Апартман 2</a>
+
+
+
+</section>
 </html>
